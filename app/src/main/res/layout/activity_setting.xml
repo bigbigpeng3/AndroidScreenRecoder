@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <!--style="@style/ClipToolbar"-->
+    <!--标题布局-->
+    <!--标题布局-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ClipToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            style="@style/ProfileTitleStyle"
+            android:text="设置"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!-- Toolbar 下面的布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_video_size"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/click_item_height"
+            android:background="@color/global_layout_white_color">
+
+            <!--<View style="@style/Line"/>-->
+
+            <!--android:layout_toRightOf="@+id/iv_good"-->
+            <TextView
+                style="@style/ProfileTextAppearance"
+                android:layout_centerVertical="true"
+
+                android:text="分辨率"/>
+
+
+            <TextView
+                android:id="@+id/tv_video_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1280x720"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video_qulity"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/click_item_height"
+            android:background="@color/global_layout_white_color">
+
+            <View style="@style/Line"/>
+
+            <!--android:layout_toRightOf="@+id/iv_good"-->
+            <TextView
+                style="@style/ProfileTextAppearance"
+                android:layout_centerVertical="true"
+
+                android:text="视频画质"/>
+
+
+            <TextView
+                android:id="@+id/tv_video_qulity"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="2Mbps"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video_rate"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/click_item_height"
+            android:background="@color/global_layout_white_color">
+
+            <View style="@style/Line"/>
+
+            <!--android:layout_toRightOf="@+id/iv_good"-->
+            <TextView
+                style="@style/ProfileTextAppearance"
+                android:layout_centerVertical="true"
+                android:text="帧率"/>
+
+
+            <TextView
+                android:id="@+id/tv_video_rate"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="30fps"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
